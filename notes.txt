@@ -1,0 +1,3 @@
+Quand test épée (prises de gauche) => Led AA' = touche
+									=> Led CC' = contact masse
+Si contact à la masse et touche, vérifier que résistance mesurée est toujours juste, sinon, désactiver le bargraph.

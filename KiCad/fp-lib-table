@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name tests-backups)(type KiCad)(uri "$(KIPRJMOD)/tests-backups.pretty")(options "")(descr ""))
+  (lib (name custom-fencingTester)(type KiCad)(uri "$(KIPRJMOD)/custom-fencingTester.pretty")(options "")(descr ""))
+  (lib (name "empreinte encart")(type KiCad)(uri "$(KIPRJMOD)/empreinte encart")(options "")(descr ""))
+)
