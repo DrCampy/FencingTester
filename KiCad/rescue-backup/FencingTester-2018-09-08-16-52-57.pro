@@ -1,10 +1,6 @@
-update=10/09/2017 15:46:04
+update=04/06/2017 18:25:42
 version=1
-last_client=eeschema
-[general]
-version=1
-RootSch=
-BoardNm=
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=
@@ -27,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -61,3 +59,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+LibName31=FencingTester_ComponentsLib

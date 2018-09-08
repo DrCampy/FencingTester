@@ -1,6 +1,37 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:FencingTester-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:FencingTester_ComponentsLib
 LIBS:FencingTester-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L FencingTester-rescue:SPST SW3
+L SPST SW3
 U 1 1 586E4C16
 P 6125 3550
 F 0 "SW3" H 6075 3650 50  0000 C CNN
@@ -26,7 +57,7 @@ F 3 "" H 6125 3550 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L FencingTester_ComponentsLib:MCP73831 U2
+L MCP73831 U2
 U 1 1 586E5899
 P 3150 3900
 F 0 "U2" H 3150 3375 60  0000 C CNN
@@ -37,7 +68,7 @@ F 3 "" H 3150 3900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R26
+L R R26
 U 1 1 586E58A0
 P 2650 4100
 F 0 "R26" V 2730 4100 50  0000 C CNN
@@ -48,7 +79,7 @@ F 3 "" H 2650 4100 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C6
+L C C6
 U 1 1 586E58AE
 P 2650 3400
 F 0 "C6" H 2675 3500 50  0000 L CNN
@@ -59,7 +90,7 @@ F 3 "" H 2650 3400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR039
+L GND #PWR039
 U 1 1 586E58B5
 P 2650 3250
 F 0 "#PWR039" H 2650 3000 50  0001 C CNN
@@ -70,7 +101,7 @@ F 3 "" H 2650 3250 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR040
+L GND #PWR040
 U 1 1 586E58BB
 P 3650 4250
 F 0 "#PWR040" H 3650 4000 50  0001 C CNN
@@ -81,7 +112,7 @@ F 3 "" H 3650 4250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R27
+L R R27
 U 1 1 586E58C1
 P 3650 4075
 F 0 "R27" V 3750 4050 50  0000 C CNN
@@ -92,7 +123,7 @@ F 3 "" H 3650 4075 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR041
+L GND #PWR041
 U 1 1 586E58C8
 P 4275 3850
 F 0 "#PWR041" H 4275 3600 50  0001 C CNN
@@ -103,7 +134,7 @@ F 3 "" H 4275 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L C C7
 U 1 1 586E58CE
 P 3925 3700
 F 0 "C7" H 3950 3800 50  0000 L CNN
@@ -117,7 +148,7 @@ NoConn ~ 1900 3450
 NoConn ~ 1900 3350
 NoConn ~ 1900 3250
 $Comp
-L FencingTester-rescue:FUSE F1
+L FUSE F1
 U 1 1 586E58F2
 P 7000 3550
 F 0 "F1" V 7075 3575 50  0000 C CNN
@@ -128,7 +159,7 @@ F 3 "" H 7000 3550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R29
+L R R29
 U 1 1 586E7AA6
 P 4975 2850
 F 0 "R29" V 4875 2850 50  0000 C CNN
@@ -139,7 +170,7 @@ F 3 "" H 4975 2850 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C8
+L C C8
 U 1 1 586E80AB
 P 5375 2900
 F 0 "C8" V 5425 2950 50  0000 L CNN
@@ -150,7 +181,7 @@ F 3 "" H 5375 2900 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR042
+L GND #PWR042
 U 1 1 586E8102
 P 5525 2900
 F 0 "#PWR042" H 5525 2650 50  0001 C CNN
@@ -161,7 +192,7 @@ F 3 "" H 5525 2900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L FencingTester_ComponentsLib:TPS61200 U3
+L TPS61200 U3
 U 1 1 586F010D
 P 8550 3750
 F 0 "U3" H 8550 3400 60  0000 C CNN
@@ -172,7 +203,7 @@ F 3 "" H 8550 3600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C9
+L C C9
 U 1 1 586F07F5
 P 7600 3400
 F 0 "C9" H 7650 3325 50  0000 L CNN
@@ -183,7 +214,7 @@ F 3 "" H 7600 3400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L L1
+L L L1
 U 1 1 586F0A4C
 P 8550 3250
 F 0 "L1" V 8500 3250 50  0000 C CNN
@@ -194,7 +225,7 @@ F 3 "" H 8550 3250 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R33
+L R R33
 U 1 1 586F17FF
 P 9350 3800
 F 0 "R33" V 9430 3800 50  0000 C CNN
@@ -205,7 +236,7 @@ F 3 "" H 9350 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R34
+L R R34
 U 1 1 586F19A3
 P 9350 4100
 F 0 "R34" V 9430 4100 50  0000 C CNN
@@ -216,7 +247,7 @@ F 3 "" H 9350 4100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
+L C C10
 U 1 1 586F1CFE
 P 9125 4250
 F 0 "C10" H 9150 4350 50  0000 L CNN
@@ -227,7 +258,7 @@ F 3 "" H 9125 4250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C11
+L C C11
 U 1 1 586F1F15
 P 9600 3800
 F 0 "C11" H 9625 3900 50  0000 L CNN
@@ -238,7 +269,7 @@ F 3 "" H 9600 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R31
+L R R31
 U 1 1 586F277E
 P 7600 3700
 F 0 "R31" V 7680 3700 50  0000 C CNN
@@ -249,7 +280,7 @@ F 3 "" H 7600 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R32
+L R R32
 U 1 1 586F2891
 P 7600 4000
 F 0 "R32" V 7675 4000 50  0000 C CNN
@@ -260,7 +291,7 @@ F 3 "" H 7600 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR043
+L GND #PWR043
 U 1 1 586F2935
 P 8975 4050
 F 0 "#PWR043" H 8975 3800 50  0001 C CNN
@@ -279,7 +310,7 @@ BSense
 Text Notes 8925 3100 2    60   ~ 0
 LPS3015-222ML
 $Comp
-L Device:D_Schottky D16
+L D_Schottky D16
 U 1 1 58705AF4
 P 5425 3375
 F 0 "D16" V 5400 3500 50  0000 C CNN
@@ -292,7 +323,7 @@ $EndComp
 Text HLabel 10025 3650 2    60   Input ~ 0
 Vout
 $Comp
-L Device:C C12
+L C C12
 U 1 1 586FD3CB
 P 9825 3800
 F 0 "C12" H 9850 3900 50  0000 L CNN
@@ -303,7 +334,7 @@ F 3 "" H 9825 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR044
+L GNDA #PWR044
 U 1 1 58796209
 P 7850 3950
 F 0 "#PWR044" H 7850 3700 50  0001 C CNN
@@ -314,7 +345,7 @@ F 3 "" H 7850 3950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR045
+L GNDA #PWR045
 U 1 1 58797ECD
 P 9350 4325
 F 0 "#PWR045" H 9350 4075 50  0001 C CNN
@@ -325,7 +356,7 @@ F 3 "" H 9350 4325 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR046
+L GNDA #PWR046
 U 1 1 58797FFA
 P 7600 4150
 F 0 "#PWR046" H 7600 3900 50  0001 C CNN
@@ -336,7 +367,7 @@ F 3 "" H 7600 4150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR047
+L GND #PWR047
 U 1 1 58798059
 P 9125 4400
 F 0 "#PWR047" H 9125 4150 50  0001 C CNN
@@ -347,7 +378,7 @@ F 3 "" H 9125 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR048
+L GND #PWR048
 U 1 1 587980D5
 P 9600 3950
 F 0 "#PWR048" H 9600 3700 50  0001 C CNN
@@ -358,7 +389,7 @@ F 3 "" H 9600 3950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR049
+L GND #PWR049
 U 1 1 58798383
 P 7600 3250
 F 0 "#PWR049" H 7600 3000 50  0001 C CNN
@@ -369,7 +400,7 @@ F 3 "" H 7600 3250 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR050
+L GND #PWR050
 U 1 1 587986A1
 P 3925 3850
 F 0 "#PWR050" H 3925 3600 50  0001 C CNN
@@ -380,7 +411,7 @@ F 3 "" H 3925 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR051
+L GND #PWR051
 U 1 1 587B9B92
 P 8700 4150
 F 0 "#PWR051" H 8700 3900 50  0001 C CNN
@@ -391,7 +422,7 @@ F 3 "" H 8700 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FencingTester-rescue:USB_OTG-RESCUE-FencingTester P4
+L USB_OTG-RESCUE-FencingTester P4
 U 1 1 58A3B3EC
 P 1600 3350
 AR Path="/58A3B3EC" Ref="P4"  Part="1" 
@@ -404,7 +435,7 @@ F 3 "" V 1550 3250 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR052
+L GND #PWR052
 U 1 1 58A3BBCA
 P 1500 2900
 F 0 "#PWR052" H 1500 2650 50  0001 C CNN
@@ -415,7 +446,7 @@ F 3 "" H 1500 2900 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR053
+L GND #PWR053
 U 1 1 58A3BCC8
 P 1950 3150
 F 0 "#PWR053" H 1950 2900 50  0001 C CNN
@@ -426,7 +457,7 @@ F 3 "" H 1950 3150 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D14
+L LED D14
 U 1 1 58A3D321
 P 2650 3750
 F 0 "D14" H 2650 3850 50  0000 C CNN
@@ -437,7 +468,7 @@ F 3 "" H 2650 3750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Battery_Cell BT1
+L Battery_Cell BT1
 U 1 1 58A3DBB5
 P 4275 3750
 F 0 "BT1" H 4100 3875 50  0000 L CNN
@@ -448,9 +479,9 @@ F 3 "" V 4275 3810 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 3550 3925 3550
+	3650 3550 4575 3550
 Wire Wire Line
-	1900 3550 2175 3550
+	1900 3550 2650 3550
 Connection ~ 2650 3550
 Wire Wire Line
 	3650 4250 3650 4225
@@ -461,19 +492,19 @@ Connection ~ 2175 3550
 Wire Wire Line
 	2175 3550 2175 2850
 Wire Wire Line
-	5225 2850 5225 2900
+	5225 2850 5225 2925
 Connection ~ 5225 2900
 Wire Wire Line
 	4875 3225 5025 3225
 Connection ~ 4275 3550
 Wire Wire Line
-	7250 3550 7425 3550
+	7250 3550 8125 3550
 Wire Wire Line
 	8975 3550 9075 3550
 Wire Wire Line
 	9075 3550 9075 3250
 Wire Wire Line
-	7775 3250 7775 3550
+	7775 3250 7775 3750
 Connection ~ 7775 3550
 Wire Wire Line
 	9075 3250 8700 3250
@@ -482,7 +513,7 @@ Wire Wire Line
 Wire Wire Line
 	8975 3950 8975 4050
 Wire Wire Line
-	8975 3650 9350 3650
+	8975 3650 10025 3650
 Wire Wire Line
 	8975 3850 9250 3850
 Wire Wire Line
@@ -501,12 +532,12 @@ Wire Wire Line
 Connection ~ 7775 3650
 Connection ~ 7600 3550
 Wire Wire Line
-	7425 3850 7600 3850
+	7425 3850 8125 3850
 Wire Wire Line
-	4975 3550 5425 3550
+	4975 3550 5625 3550
 Connection ~ 5425 3550
 Wire Wire Line
-	4775 2850 4775 3150
+	4775 2850 4775 3250
 Wire Wire Line
 	5225 2850 5125 2850
 Connection ~ 4775 2850
@@ -523,6 +554,9 @@ Connection ~ 9825 3650
 Wire Wire Line
 	9350 4325 9350 4250
 Wire Wire Line
+	7850 3950 8125 3950
+Connection ~ 8050 3950
+Wire Wire Line
 	1500 2900 1500 2950
 Wire Wire Line
 	1900 3150 1950 3150
@@ -531,16 +565,16 @@ Wire Wire Line
 Wire Wire Line
 	2650 3900 2650 3950
 Wire Wire Line
-	2175 2850 4550 2850
+	2175 2850 4825 2850
 Wire Wire Line
 	5425 3525 5425 3550
 Wire Wire Line
-	6625 3550 6700 3550
+	6625 3550 6750 3550
 Wire Wire Line
 	6700 3550 6700 3950
 Connection ~ 6700 3550
 $Comp
-L FencingTester-rescue:Q_PMOS_DGS_corrected-RESCUE-FencingTester Q11
+L Q_PMOS_DGS_corrected-RESCUE-FencingTester Q11
 U 1 1 5920AA17
 P 4775 3450
 AR Path="/5920AA17" Ref="Q11"  Part="1" 
@@ -553,7 +587,7 @@ F 3 "" H 4775 3450 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R R46
+L R R46
 U 1 1 5920B9F1
 P 4550 2700
 F 0 "R46" V 4630 2700 50  0000 C CNN
@@ -564,7 +598,7 @@ F 3 "" H 4550 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR054
+L GND #PWR054
 U 1 1 5920BB55
 P 4550 2550
 F 0 "#PWR054" H 4550 2300 50  0001 C CNN
@@ -576,7 +610,7 @@ F 3 "" H 4550 2550 50  0000 C CNN
 $EndComp
 Connection ~ 4550 2850
 $Comp
-L Device:Q_NMOS_GSD Q12
+L Q_NMOS_GSD Q12
 U 1 1 5920C2A0
 P 5225 3125
 F 0 "Q12" V 5425 3250 50  0000 L CNN
@@ -587,55 +621,16 @@ F 3 "" H 5225 3125 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:C C13
+L C C?
 U 1 1 59B5538F
 P 7425 3700
-F 0 "C13" H 7300 3800 50  0000 L CNN
+F 0 "C?" H 7300 3800 50  0000 L CNN
 F 1 "0.1µF" H 7200 3625 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7463 3550 50  0001 C CNN
+F 2 "" H 7463 3550 50  0001 C CNN
 F 3 "" H 7425 3700 50  0001 C CNN
 	1    7425 3700
 	1    0    0    -1  
 $EndComp
 Connection ~ 7425 3550
 Connection ~ 7600 3850
-Wire Wire Line
-	3925 3550 4275 3550
-Wire Wire Line
-	2175 3550 2650 3550
-Wire Wire Line
-	5225 2900 5225 2925
-Wire Wire Line
-	4275 3550 4575 3550
-Wire Wire Line
-	7775 3550 8125 3550
-Wire Wire Line
-	7775 3550 7775 3650
-Wire Wire Line
-	9350 3650 9600 3650
-Wire Wire Line
-	7775 3650 7775 3750
-Wire Wire Line
-	7600 3550 7775 3550
-Wire Wire Line
-	5425 3550 5625 3550
-Wire Wire Line
-	4775 2850 4825 2850
-Wire Wire Line
-	4775 3150 4775 3250
-Wire Wire Line
-	9600 3650 9825 3650
-Wire Wire Line
-	9825 3650 10025 3650
-Wire Wire Line
-	6700 3550 6750 3550
-Wire Wire Line
-	4550 2850 4775 2850
-Wire Wire Line
-	7425 3550 7600 3550
-Wire Wire Line
-	7600 3850 8125 3850
-Wire Wire Line
-	7850 3950 8125 3950
-Connection ~ 3650 4250
 $EndSCHEMATC
