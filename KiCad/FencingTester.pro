@@ -1,4 +1,4 @@
-update=20/09/2018 08:33:03
+update=28/10/2018 01:06:58
 version=1
 last_client=kicad
 [cvpcb]
@@ -12,7 +12,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=FencingTester_Netlist.net
+LastNetListRead=FencingTester.net
 PadDrill=0
 PadDrillOvalY=0
 PadSizeH=1.35
