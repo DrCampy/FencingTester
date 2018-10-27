@@ -1,0 +1,51 @@
+i2c
+
+0) set TWIE in TWICR to 0 (we do not need interrupts)
+
+TWINT set to 1 when we have to act.
+TWAR, TWSR, TWDR must be used before putting TWINT to 0 (which start operation of the TWI)
+
+
+
+
+MODE 1 set to XXX0 0000
+MODE 2 set to 0X0X 0XXX (enable error status flag, grop control is dimming, output change on stop, not ack)
+GRPPWM set to FF (full overall brightness) (or do not care as we set led mode in 10 (ignore overall brightness))
+DMBLNK from MODE2 set to 0 (dimming control from GRPPWM)
+PWM0-10 set to 0xFF (or another value for lower brightness)
+GRPFREQ = XXXX XXXX (don't care, used in dimming mode)
+
+LDR controls 4 leds at a time.
+Leds will be used in 2 states : 00 (off) or 10 (on and dimmed through it's individual PWM)
+LEDOUT0 : DDCC BBAA
+LEDOUT1 : G'G'GG FFEE (we have an orange LED)
+LEDOUT2 : KKJJ IIHH
+LEDOUT3 : 0000 0000
+
+Init :
+  Send START
+  Send SLA+W (1110 000 + 0)
+  Send Control register 100 00000
+                (auto inc.) (First register)
+  Send data:
+      MODE1
+      MODE2
+      PWM0
+      ...
+      PWM10
+  Send START
+  Send SLA+W (1110 000 + 0)
+  Send Control register 000 0x1C
+                  (no inc.) (IREF Configuration)    //(if needed)
+  Send STOP
+
+Update:
+  Send START
+  Send SLA+W (1110 000 + 0)
+  Send Control register 100 0x14
+                (auto inc.) (First register)
+  Send data:
+      LEDOUT0
+      ...
+      LEDOUT3
+  Send STOP
