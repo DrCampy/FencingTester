@@ -1,12 +1,28 @@
 i2c
 
 0) set TWIE in TWICR to 0 (we do not need interrupts)
+    TWINT set to 1 when we have to act.
+    TWAR, TWSR, TWDR must be used before putting TWINT to 0 (which start operation of the TWI)
+  set TWEA in TWICR to 1 (send ACK in MR mode)
 
-TWINT set to 1 when we have to act.
-TWAR, TWSR, TWDR must be used before putting TWINT to 0 (which start operation of the TWI)
+  TWSTA and TWSTO : start and stop conditions. Cleared when condition sent on the bus
+  TWEN in TWICR set to 1 (enabels TWI)
+  TWICR = I1XXX1X0
 
+  Check for prescaler value (TWSR)
 
+  Check for TWSR for status of transmission
 
+  TWDR contains data to be sent
+
+  TWAR, TWAMR : unused (for slaves)
+
+INIT.
+
+Set start to 1, int to 0.
+Set TWDR to data, int to 0
+(again if needed)
+Set stop to 1, INT to 0
 
 MODE 1 set to XXX0 0000
 MODE 2 set to 0X0X 0XXX (enable error status flag, grop control is dimming, output change on stop, not ack)
@@ -19,7 +35,7 @@ LDR controls 4 leds at a time.
 Leds will be used in 2 states : 00 (off) or 10 (on and dimmed through it's individual PWM)
 LEDOUT0 : DDCC BBAA
 LEDOUT1 : G'G'GG FFEE (we have an orange LED)
-LEDOUT2 : KKJJ IIHH
+LEDOUT2 : 00JJ IIHH
 LEDOUT3 : 0000 0000
 
 Init :
