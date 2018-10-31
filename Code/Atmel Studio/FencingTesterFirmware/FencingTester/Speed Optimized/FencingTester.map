@@ -674,9 +674,10 @@ END GROUP
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
+ *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
- *(.gnu.linkonce.d*)
+ *(.gnu.linkonce.r*)
                 0x00800100                . = ALIGN (0x2)
                 0x00800100                _edata = .
                 [!provide]                PROVIDE (__data_end, .)

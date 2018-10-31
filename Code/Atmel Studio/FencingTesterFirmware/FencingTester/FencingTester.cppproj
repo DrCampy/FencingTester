@@ -34,7 +34,7 @@
   <documentation help="" />
   <offline-documentation help="" />
   <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.32.0" />
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.34.1" />
   </dependencies>
 </framework-data>
     </AsfFrameworkConfig>
@@ -52,6 +52,8 @@
       <ToolName xmlns="">Simulator</ToolName>
     </com_atmel_avrdbg_tool_simulator>
     <StimuliFile>D:\Users\Morgan Diepart\Dropbox\projets\FencingTester\Code\Atmel Studio\FencingTesterFirmware\FencingTester\sim.stim</StimuliFile>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
