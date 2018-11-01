@@ -21,12 +21,16 @@ void Bargraph::setValue(short unsigned int value){
 			value = 10;
 		}
 		
-		lastValue = value;
 		
 		/*If we need to display the value, processes it*/
 		if(isOn){
-			
+			if(lastValue <= 4){
+
+			}else if(lastValue <= 8){
+				
+			}
 		}
+		lastValue = value;
 	}
 		
 void Bargraph::display(bool display){
@@ -42,10 +46,11 @@ void Bargraph::display(bool display){
 
 		
 Bargraph::Bargraph(){
-	
-
-			
+	if(!bargraphInit()){
+		bargraphError();
+	}
 	display(true);
+	lastValue = 0;
 	setValue(0);
 }
 
@@ -62,50 +67,53 @@ bool Bargraph::bargraphInit(){
 		
 		//MODE registers are kept at default values.
 		if (!sendStart()){ //Starts communication
-			bargraphError();
+			return false;
 		}
 		
 		if(!sendSLA_W()){ //Sends the slave adress with writing bit
-			bargraphError();
+			return false;
 		}
 		
 		if(!sendData(0b10000010)){ //sends the control register's value for the device (100 for auto increment then 00010 for register PWM0)
-			bargraphError();
+			return false;
 		}
 		
 		for(int i = 0; i < 5; i++){ //First 6 PWM registers are green values
 			if(!sendData(CHAR_GRN_PWM)){
-				bargraphError();
+				return false;
 			}
 		}
 
 		if(!sendData(CHAR_ORG_PWM)){ //next register is for the ORG led.
-			bargraphError();
+			return false;
+
 		}
 		
 		for(int i = 0; i < 2; i++){ //Next 3 registers are for the red LEDs
 			if(!sendData(CHAR_RED_PWM)){
-				bargraphError();
+				return false;
 			}
 		}
 		
 		if(!sendRStart()){
-			bargraphError();
+			return false;
 		}
 		
 		if(!sendSLA_W()){
-			bargraphError();
+			return false;
 		}
 		
+		//1C
 		if(!sendData(0b00011100)){
-			bargraphError();
+			return false;
 		}
 		
-		if(!sendData(0b/*IREF_DATAS*/)){ //TODO What to put in IREF
-			bargraphError()
+		//IREF : see associated excel sheet
+		if(!sendData(0b01111001)){ //TODO What to put in IREF
+			return false;
 		}
 		if(!sendStop()){
-			bargraphError();
+			return false;
 		}
 
 
