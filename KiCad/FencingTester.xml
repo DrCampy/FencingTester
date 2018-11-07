@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\Users\Morgan Diepart\Documents\GitHub\FencingTester\KiCad\FencingTester.sch</source>
+    <date>03/11/2018 15:13:16</date>
+    <tool>Eeschema (5.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Fencing Tester</title>
+        <company>Morgan Diepart</company>
+        <rev>2.0</rev>
+        <date>2016-12-29</date>
+        <source>FencingTester.sch</source>
+        <comment number="1" value="Testeur d'escrime pour l'épée, fil de corps, enrouleurs et fils de piste."/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/power rail/" tstamps="/586DEDAB/">
+      <title_block>
+        <title>Fencing Tester</title>
+        <company>Morgan Diepart</company>
+        <rev>2.2</rev>
+        <date>2018-10-27</date>
+        <source>PowerRail.sch</source>
+        <comment number="1" value="Rail d'alimentation"/>
+        <comment number="2" value="V2.0 -&gt; V2.1 Ajout d'un condensateur en parallèle avec R31 (UVLO au démarrage)"/>
+        <comment number="3" value="V2.1 -&gt; V2.2 Supression des mosfet pour le switch si USB branché (bad design)"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Y1">
+      <value>16MHz</value>
+      <footprint>custom-fencingTester:Quartz</footprint>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584B6012</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>22 pF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586055FD</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>22 pF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5860566E</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586081FF</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>SERIAL</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm</footprint>
+      <libsource lib="" part="CONN_01X06" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5863AC67</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5863BBF7</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>Led_x2</value>
+      <footprint>custom-fencingTester:3PadsWires</footprint>
+      <libsource lib="FencingTester-rescue" part="Led_x2" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5863E9C0</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>Led_x2</value>
+      <footprint>custom-fencingTester:3PadsWires</footprint>
+      <libsource lib="FencingTester-rescue" part="Led_x2" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5863EAD6</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58644698</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586968C2</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586972F7</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58697402</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>Bargraph</value>
+      <footprint>custom-fencingTester:Bargraph</footprint>
+      <libsource lib="FencingTester_ComponentsLib" part="Bargraph" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586EFD32</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586BF873</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>61k9</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586BF8EB</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586BF8FD</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>CONN_01X03</value>
+      <footprint>custom-fencingTester:3PadsWires</footprint>
+      <libsource lib="" part="CONN_01X03" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586C0523</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_01X03</value>
+      <footprint>custom-fencingTester:3PadsWires</footprint>
+      <libsource lib="" part="CONN_01X03" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586C0A47</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>300</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586C5D48</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>61k9</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586C9435</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>587292DF</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5872941E</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>587294B9</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>Led_x2</value>
+      <footprint>custom-fencingTester:3PadsWires</footprint>
+      <libsource lib="FencingTester-rescue" part="Led_x2" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5863EBA3</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5869750C</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58697619</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5869772B</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SP3T</value>
+      <footprint>custom-fencingTester:SW1</footprint>
+      <libsource lib="FencingTester-rescue" part="SP3T" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>589C9F79</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SP3T</value>
+      <footprint>custom-fencingTester:SW2</footprint>
+      <libsource lib="FencingTester-rescue" part="SP3T" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>589D091A</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>120k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59252E05</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>120k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59252F55</tstamp>
+    </comp>
+    <comp ref="R45">
+      <value>120k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5925304D</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TLC59116</value>
+      <footprint>Housings_SSOP:TSSOP-28_4.4x9.7mm_Pitch0.65mm</footprint>
+      <libsource lib="FencingTester_ComponentsLib" part="TLC59116" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE56A99</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF435ED</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF53037</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>ATMEGA328P-P</value>
+      <footprint>Housings_DIP:DIP-28_W7.62mm_Socket_LongPads</footprint>
+      <libsource lib="FencingTester-rescue" part="ATMEGA328P-P" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584B1F6F</tstamp>
+    </comp>
+    <comp ref="AR1">
+      <value>MAX4238</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="FencingTester_ComponentsLib" part="MAX4238" description="MAX4238 opamp in 8-pin package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586EB3EB</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD7E9B3</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD94A6A</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDE687E</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>SPST</value>
+      <footprint>custom-fencingTester:SW3</footprint>
+      <libsource lib="FencingTester-rescue" part="SPST" description=""/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586E4C16</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>MCP73831</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <libsource lib="FencingTester_ComponentsLib" part="MCP73831" description=""/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586E5899</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586E58A0</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>4.7µF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586E58AE</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>2k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586E58C1</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>4.7µF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586E58CE</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>FUSE</value>
+      <footprint>Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering</footprint>
+      <libsource lib="FencingTester-rescue" part="FUSE" description=""/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586E58F2</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586F07F5</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>2.2µH</value>
+      <footprint>custom-fencingTester:CoilCraft-LPS3015-CMS</footprint>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586F0A4C</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>2.4M</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586F17FF</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>267k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586F19A3</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586F1CFE</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586F1F15</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>2.4M</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586F277E</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>220k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586F2891</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586FD3CB</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>USB_OTG</value>
+      <footprint>custom-fencingTester:USB_Micro-B</footprint>
+      <libsource lib="FencingTester-rescue" part="USB_OTG-RESCUE-FencingTester" description=""/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>58A3B3EC</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>LED</value>
+      <footprint>custom-fencingTester:ChargingLed</footprint>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>58A3D321</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery_Cell</value>
+      <footprint>custom-fencingTester:2PadsWire</footprint>
+      <libsource lib="Device" part="Battery_Cell" description="single battery cell"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>58A3DBB5</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>59B5538F</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>TPS61200</value>
+      <footprint>custom-fencingTester:TPS61200</footprint>
+      <libsource lib="FencingTester_ComponentsLib" part="TPS61200" description=""/>
+      <sheetpath names="/power rail/" tstamps="/586DEDAB/"/>
+      <tstamp>586F010D</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="" part="conn:CONN_01X03">
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">conn:CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="conn:CONN_01X06">
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">conn:CONN_01X06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>single battery cell</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>LED generic</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester-rescue" part="ATMEGA328P-P">
+      <footprints>
+        <fp>28DIP-ELL600</fp>
+        <fp>28dip600</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ATMEGA328P-P</field>
+        <field name="Footprint">DIL28</field>
+      </fields>
+      <pins>
+        <pin num="1" name="(PCINT14/~RESET~)PC6" type="BiDi"/>
+        <pin num="2" name="(PCINT16/RXD)PD0" type="BiDi"/>
+        <pin num="3" name="(PCINT17/TXD)PD1" type="BiDi"/>
+        <pin num="4" name="(PCINT18/INT0)PD2" type="BiDi"/>
+        <pin num="5" name="(PCINT19/OC2B/INT1)PD3" type="BiDi"/>
+        <pin num="6" name="(PCINT20/XCK/T0)PD4" type="BiDi"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="(PCINT6/XTAL1/TOSC1)PB6" type="BiDi"/>
+        <pin num="10" name="(PCINT7/XTAL2/TOSC2)PB7" type="BiDi"/>
+        <pin num="11" name="(PCINT21/OC0B/T1)PD5" type="BiDi"/>
+        <pin num="12" name="(PCINT22/OC0A/AIN0)PD6" type="BiDi"/>
+        <pin num="13" name="(PCINT23/AIN1)PD7" type="BiDi"/>
+        <pin num="14" name="(PCINT0/CLKO/ICP1)PB0" type="BiDi"/>
+        <pin num="15" name="(PCINT1/OC1A)PB1" type="BiDi"/>
+        <pin num="16" name="(PCINT2/OC1B/~SS~)PB2" type="BiDi"/>
+        <pin num="17" name="(PCINT3/OC2A/MOSI)PB3" type="BiDi"/>
+        <pin num="18" name="(PCINT4/MISO)PB4" type="BiDi"/>
+        <pin num="19" name="(PCINT5/SCK)PB5" type="BiDi"/>
+        <pin num="20" name="AVCC" type="power_in"/>
+        <pin num="21" name="AREF" type="BiDi"/>
+        <pin num="22" name="GND" type="power_in"/>
+        <pin num="23" name="(PCINT8/ADC0)PC0" type="BiDi"/>
+        <pin num="24" name="(PCINT9/ADC1)PC1" type="BiDi"/>
+        <pin num="25" name="(PCINT10/ADC2)PC2" type="BiDi"/>
+        <pin num="26" name="(PCINT11/ADC3)PC3" type="BiDi"/>
+        <pin num="27" name="(PCINT12/SDA/ADC4)PC4" type="BiDi"/>
+        <pin num="28" name="(PCINT13/SCL/ADC5)PC5" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester-rescue" part="FUSE">
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">FUSE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester-rescue" part="Led_x2">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Led_x2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="input"/>
+        <pin num="2" name="K" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester-rescue" part="SP3T">
+      <footprints>
+        <fp>SW*</fp>
+        <fp>SP3T*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SP3T</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester-rescue" part="SPST">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SPST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester-rescue" part="USB_OTG-RESCUE-FencingTester">
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_OTG-RESCUE-FencingTester</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester_ComponentsLib" part="Bargraph">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Bargraph</field>
+      </fields>
+      <pins>
+        <pin num="1" name="R" type="input"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="R" type="input"/>
+        <pin num="4" name="G" type="input"/>
+        <pin num="5" name="R" type="input"/>
+        <pin num="6" name="G" type="input"/>
+        <pin num="7" name="R" type="input"/>
+        <pin num="8" name="G" type="input"/>
+        <pin num="9" name="R" type="input"/>
+        <pin num="10" name="G" type="input"/>
+        <pin num="11" name="R" type="input"/>
+        <pin num="12" name="G" type="input"/>
+        <pin num="13" name="R" type="input"/>
+        <pin num="14" name="G" type="input"/>
+        <pin num="15" name="R" type="input"/>
+        <pin num="16" name="G" type="input"/>
+        <pin num="17" name="R" type="input"/>
+        <pin num="18" name="G" type="input"/>
+        <pin num="19" name="R" type="input"/>
+        <pin num="20" name="G" type="input"/>
+        <pin num="21" name="GND" type="input"/>
+        <pin num="22" name="GND" type="input"/>
+        <pin num="23" name="GND" type="input"/>
+        <pin num="24" name="GND" type="input"/>
+        <pin num="25" name="GND" type="input"/>
+        <pin num="26" name="GND" type="input"/>
+        <pin num="27" name="GND" type="input"/>
+        <pin num="28" name="GND" type="input"/>
+        <pin num="29" name="GND" type="input"/>
+        <pin num="30" name="GND" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester_ComponentsLib" part="MAX4238">
+      <description>MAX4238 opamp in 8-pin package</description>
+      <docs>https://datasheets.maximintegrated.com/en/ds/MAX4238-MAX4239.pdf</docs>
+      <fields>
+        <field name="Reference">AR</field>
+        <field name="Value">MAX4238</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~SHDN" type="input"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_out"/>
+        <pin num="6" name="OUT" type="output"/>
+        <pin num="7" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester_ComponentsLib" part="MCP73831">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73831</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="input"/>
+        <pin num="2" name="Vss" type="input"/>
+        <pin num="3" name="Vbat" type="power_out"/>
+        <pin num="4" name="Vdd" type="input"/>
+        <pin num="5" name="PROG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester_ComponentsLib" part="TLC59116">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLC59116</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Rext" type="output"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="A1" type="input"/>
+        <pin num="4" name="A2" type="input"/>
+        <pin num="5" name="A4" type="input"/>
+        <pin num="6" name="~OUT0" type="openCol"/>
+        <pin num="7" name="~OUT1" type="openCol"/>
+        <pin num="8" name="~OUT2" type="openCol"/>
+        <pin num="9" name="~OUT3" type="openCol"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="~OUT4" type="openCol"/>
+        <pin num="12" name="~OUT5" type="openCol"/>
+        <pin num="13" name="~OUT6" type="openCol"/>
+        <pin num="14" name="~OUT7" type="openCol"/>
+        <pin num="15" name="~OUT8" type="openCol"/>
+        <pin num="16" name="~OUT9" type="openCol"/>
+        <pin num="17" name="~OUT10" type="openCol"/>
+        <pin num="18" name="~OUT11" type="openCol"/>
+        <pin num="19" name="GND" type="power_in"/>
+        <pin num="20" name="~OUT12" type="openCol"/>
+        <pin num="21" name="~OUT13" type="openCol"/>
+        <pin num="22" name="~OUT14" type="openCol"/>
+        <pin num="23" name="~OUT15" type="openCol"/>
+        <pin num="24" name="GND" type="power_in"/>
+        <pin num="25" name="RESET" type="output"/>
+        <pin num="26" name="SCL" type="input"/>
+        <pin num="27" name="SDA" type="BiDi"/>
+        <pin num="28" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="FencingTester_ComponentsLib" part="TPS61200">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61200</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vaux" type="input"/>
+        <pin num="2" name="Vout" type="power_out"/>
+        <pin num="3" name="L" type="input"/>
+        <pin num="4" name="PGND" type="power_out"/>
+        <pin num="5" name="Vin" type="input"/>
+        <pin num="6" name="EN" type="input"/>
+        <pin num="7" name="UVLO" type="input"/>
+        <pin num="8" name="PS" type="input"/>
+        <pin num="9" name="GND" type="input"/>
+        <pin num="10" name="FB" type="input"/>
+        <pin num="11" name="~" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>p:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="FencingTester-rescue">
+      <uri>D:\Users\Morgan Diepart\Documents\GitHub\FencingTester\KiCad/FencingTester-rescue.lib</uri>
+    </library>
+    <library logical="FencingTester_ComponentsLib">
+      <uri>D:\Users\Morgan Diepart\Documents\GitHub\FencingTester\KiCad/FencingTester_ComponentsLib.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="C1" pin="2"/>
+      <node ref="P2" pin="2"/>
+      <node ref="P3" pin="3"/>
+      <node ref="P3" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="P1" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U1" pin="5"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="24"/>
+      <node ref="R17" pin="2"/>
+      <node ref="IC1" pin="8"/>
+      <node ref="IC1" pin="22"/>
+      <node ref="R27" pin="2"/>
+      <node ref="P4" pin="5"/>
+      <node ref="U2" pin="2"/>
+      <node ref="P4" pin="6"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="D3" pin="2"/>
+      <node ref="SW1" pin="3"/>
+      <node ref="D1" pin="2"/>
+      <node ref="U3" pin="11"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="2" name="Net-(U1-Pad23)">
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad22)">
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad21)">
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="5" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="8" name="+5V">
+      <node ref="D4" pin="8"/>
+      <node ref="D4" pin="6"/>
+      <node ref="D4" pin="4"/>
+      <node ref="AR1" pin="7"/>
+      <node ref="P1" pin="3"/>
+      <node ref="D4" pin="13"/>
+      <node ref="D4" pin="12"/>
+      <node ref="R16" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="D4" pin="14"/>
+      <node ref="D4" pin="10"/>
+      <node ref="R14" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="D4" pin="15"/>
+      <node ref="D4" pin="17"/>
+      <node ref="D4" pin="19"/>
+      <node ref="D4" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="R33" pin="1"/>
+      <node ref="R44" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="R43" pin="1"/>
+      <node ref="U1" pin="28"/>
+      <node ref="IC1" pin="20"/>
+      <node ref="C12" pin="1"/>
+      <node ref="IC1" pin="7"/>
+      <node ref="R45" pin="1"/>
+      <node ref="C11" pin="1"/>
+    </net>
+    <net code="9" name="Net-(IC1-Pad13)">
+      <node ref="SW1" pin="2"/>
+      <node ref="IC1" pin="13"/>
+    </net>
+    <net code="10" name="Net-(IC1-Pad12)">
+      <node ref="SW1" pin="4"/>
+      <node ref="IC1" pin="12"/>
+    </net>
+    <net code="11" name="Net-(IC1-Pad11)">
+      <node ref="IC1" pin="11"/>
+    </net>
+    <net code="12" name="/RST">
+      <node ref="R1" pin="2"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="13" name="/SDA">
+      <node ref="U1" pin="27"/>
+      <node ref="IC1" pin="27"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="14" name="Net-(R16-Pad1)">
+      <node ref="U1" pin="25"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="15" name="Net-(R15-Pad2)">
+      <node ref="R17" pin="1"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="16" name="Net-(R15-Pad1)">
+      <node ref="R15" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="17" name="Net-(IC1-Pad25)">
+      <node ref="IC1" pin="25"/>
+    </net>
+    <net code="18" name="Net-(IC1-Pad4)">
+      <node ref="R2" pin="2"/>
+      <node ref="IC1" pin="4"/>
+    </net>
+    <net code="19" name="Net-(IC1-Pad5)">
+      <node ref="R3" pin="2"/>
+      <node ref="IC1" pin="5"/>
+    </net>
+    <net code="20" name="Net-(IC1-Pad6)">
+      <node ref="R4" pin="2"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="21" name="Net-(IC1-Pad15)">
+      <node ref="IC1" pin="15"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="22" name="Net-(D4-Pad26)">
+      <node ref="U1" pin="11"/>
+      <node ref="D4" pin="26"/>
+    </net>
+    <net code="23" name="Net-(D4-Pad27)">
+      <node ref="U1" pin="9"/>
+      <node ref="D4" pin="27"/>
+    </net>
+    <net code="24" name="Net-(D4-Pad28)">
+      <node ref="D4" pin="28"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="25" name="Net-(D4-Pad30)">
+      <node ref="D4" pin="30"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="26" name="GNDA">
+      <node ref="U3" pin="9"/>
+      <node ref="AR1" pin="4"/>
+      <node ref="R34" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R32" pin="2"/>
+    </net>
+    <net code="27" name="Net-(AR1-Pad2)">
+      <node ref="R12" pin="1"/>
+      <node ref="R11" pin="2"/>
+      <node ref="AR1" pin="2"/>
+    </net>
+    <net code="28" name="Net-(R13-Pad2)">
+      <node ref="SW2" pin="3"/>
+      <node ref="R13" pin="2"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="29" name="/SCL">
+      <node ref="U1" pin="26"/>
+      <node ref="IC1" pin="28"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="30" name="Net-(D4-Pad7)">
+      <node ref="D4" pin="7"/>
+    </net>
+    <net code="31" name="/RX">
+      <node ref="P1" pin="4"/>
+      <node ref="IC1" pin="2"/>
+    </net>
+    <net code="32" name="/TX">
+      <node ref="P1" pin="5"/>
+      <node ref="IC1" pin="3"/>
+    </net>
+    <net code="33" name="/Rsense">
+      <node ref="IC1" pin="23"/>
+      <node ref="AR1" pin="6"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="34" name="/BSense">
+      <node ref="IC1" pin="24"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="F1" pin="2"/>
+    </net>
+    <net code="35" name="Net-(IC1-Pad19)">
+      <node ref="R10" pin="2"/>
+      <node ref="IC1" pin="19"/>
+    </net>
+    <net code="36" name="Net-(IC1-Pad18)">
+      <node ref="R9" pin="2"/>
+      <node ref="IC1" pin="18"/>
+    </net>
+    <net code="37" name="Net-(IC1-Pad17)">
+      <node ref="IC1" pin="17"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="38" name="Net-(IC1-Pad26)">
+      <node ref="IC1" pin="26"/>
+    </net>
+    <net code="39" name="Net-(IC1-Pad21)">
+      <node ref="IC1" pin="21"/>
+    </net>
+    <net code="40" name="Net-(AR1-Pad3)">
+      <node ref="R13" pin="1"/>
+      <node ref="AR1" pin="3"/>
+    </net>
+    <net code="41" name="Net-(AR1-Pad1)">
+      <node ref="C5" pin="2"/>
+      <node ref="AR1" pin="1"/>
+    </net>
+    <net code="42" name="Net-(D4-Pad24)">
+      <node ref="U1" pin="13"/>
+      <node ref="D4" pin="24"/>
+    </net>
+    <net code="43" name="Net-(D4-Pad9)">
+      <node ref="D4" pin="9"/>
+    </net>
+    <net code="44" name="Net-(D4-Pad5)">
+      <node ref="D4" pin="5"/>
+    </net>
+    <net code="45" name="Net-(D4-Pad3)">
+      <node ref="D4" pin="3"/>
+    </net>
+    <net code="46" name="Net-(D4-Pad29)">
+      <node ref="U1" pin="7"/>
+      <node ref="D4" pin="29"/>
+    </net>
+    <net code="47" name="Net-(D4-Pad25)">
+      <node ref="D4" pin="25"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="48" name="Net-(D4-Pad23)">
+      <node ref="U1" pin="14"/>
+      <node ref="D4" pin="23"/>
+    </net>
+    <net code="49" name="Net-(D4-Pad22)">
+      <node ref="U1" pin="15"/>
+      <node ref="D4" pin="22"/>
+    </net>
+    <net code="50" name="Net-(D4-Pad21)">
+      <node ref="U1" pin="16"/>
+      <node ref="D4" pin="21"/>
+    </net>
+    <net code="51" name="Net-(D4-Pad20)">
+      <node ref="D4" pin="20"/>
+    </net>
+    <net code="52" name="Net-(D4-Pad18)">
+      <node ref="D4" pin="18"/>
+    </net>
+    <net code="53" name="Net-(D4-Pad16)">
+      <node ref="D4" pin="16"/>
+    </net>
+    <net code="54" name="Net-(D4-Pad11)">
+      <node ref="D4" pin="11"/>
+    </net>
+    <net code="55" name="/CBB'">
+      <node ref="R44" pin="2"/>
+      <node ref="SW2" pin="4"/>
+      <node ref="P3" pin="2"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="56" name="/CCC'">
+      <node ref="SW2" pin="2"/>
+      <node ref="P2" pin="3"/>
+      <node ref="R45" pin="2"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="57" name="/CAA'">
+      <node ref="R2" pin="1"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="P2" pin="1"/>
+      <node ref="R43" pin="2"/>
+    </net>
+    <net code="58" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="P1" pin="6"/>
+    </net>
+    <net code="59" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="60" name="Net-(C4-Pad1)">
+      <node ref="Y1" pin="2"/>
+      <node ref="IC1" pin="10"/>
+      <node ref="C4" pin="1"/>
+    </net>
+    <net code="61" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1"/>
+      <node ref="Y1" pin="1"/>
+      <node ref="IC1" pin="9"/>
+    </net>
+    <net code="62" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="63" name="Net-(IC1-Pad16)">
+      <node ref="R7" pin="2"/>
+      <node ref="IC1" pin="16"/>
+    </net>
+    <net code="64" name="Net-(D2-Pad3)">
+      <node ref="R7" pin="1"/>
+      <node ref="D2" pin="3"/>
+    </net>
+    <net code="65" name="Net-(IC1-Pad14)">
+      <node ref="IC1" pin="14"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="66" name="Net-(D1-Pad3)">
+      <node ref="R5" pin="1"/>
+      <node ref="D1" pin="3"/>
+    </net>
+    <net code="67" name="Net-(SW1-Pad1)">
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="68" name="Net-(D3-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="69" name="Net-(D3-Pad3)">
+      <node ref="R9" pin="1"/>
+      <node ref="D3" pin="3"/>
+    </net>
+    <net code="70" name="Net-(D2-Pad1)">
+      <node ref="R8" pin="1"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="71" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="72" name="Net-(C13-Pad2)">
+      <node ref="R31" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="U3" pin="7"/>
+      <node ref="R32" pin="1"/>
+    </net>
+    <net code="73" name="Net-(C13-Pad1)">
+      <node ref="R31" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="U3" pin="5"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U3" pin="8"/>
+      <node ref="F1" pin="1"/>
+      <node ref="C9" pin="2"/>
+    </net>
+    <net code="74" name="Net-(BT1-Pad1)">
+      <node ref="BT1" pin="1"/>
+      <node ref="SW3" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="75" name="Net-(L1-Pad2)">
+      <node ref="U3" pin="3"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="76" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2"/>
+      <node ref="D14" pin="2"/>
+      <node ref="P4" pin="1"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="77" name="Net-(R27-Pad1)">
+      <node ref="U2" pin="5"/>
+      <node ref="R27" pin="1"/>
+    </net>
+    <net code="78" name="Net-(R26-Pad2)">
+      <node ref="R26" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="79" name="Net-(D14-Pad1)">
+      <node ref="D14" pin="1"/>
+      <node ref="R26" pin="1"/>
+    </net>
+    <net code="80" name="Net-(R33-Pad2)">
+      <node ref="R34" pin="1"/>
+      <node ref="U3" pin="10"/>
+      <node ref="R33" pin="2"/>
+    </net>
+    <net code="81" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="82" name="Net-(P4-Pad2)">
+      <node ref="P4" pin="2"/>
+    </net>
+    <net code="83" name="Net-(P4-Pad3)">
+      <node ref="P4" pin="3"/>
+    </net>
+    <net code="84" name="Net-(P4-Pad4)">
+      <node ref="P4" pin="4"/>
+    </net>
+  </nets>
+</export>
