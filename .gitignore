@@ -5,3 +5,10 @@
 *.elf
 *.map
 *.srec
+*.srec
+*.d
+*.o
+*.hex
+*.elf
+*.lss
+Code/Atmel Studio/FencingTesterFirmware/FencingTester/Speed Optimized/*
