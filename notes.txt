@@ -1,3 +1,9 @@
 Quand test épée (prises de gauche) => Led AA' = touche
 									=> Led CC' = contact masse
 Si contact à la masse et touche, vérifier que résistance mesurée est toujours juste, sinon, désactiver le bargraph.
+
+TODO :
+Vérifier épaisseurs pistes
+vérifier empruntes boutons
+réagencer PCB pour potentielle batterie dessus ? 18650
+garde autour de la piste de Rsense ?
