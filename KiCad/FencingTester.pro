@@ -1,4 +1,4 @@
-update=28/10/2018 01:06:58
+update=lun 30 sep 2019 13:39:56 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -12,7 +12,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=FencingTester.net
+LastNetListRead=FencingTester_Netlist.net
 PadDrill=0
 PadDrillOvalY=0
 PadSizeH=1.35
@@ -24,7 +24,7 @@ ModuleTextSizeV=1
 ModuleTextSizeH=1
 ModuleTextSizeThickness=0.15
 SolderMaskClearance=0.2
-SolderMaskMinWidth=0
+SolderMaskMinWidth=0.25
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
