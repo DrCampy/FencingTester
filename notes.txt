@@ -7,3 +7,7 @@ Vérifier épaisseurs pistes
 vérifier empruntes boutons
 réagencer PCB pour potentielle batterie dessus ? 18650
 garde autour de la piste de Rsense ?
+
+
+Track width = 0.4mm = 15,7mills -> 0.00217 ohm / 100mills -> 0.854 mR / mm
+Track width = 0.25mm = 9,8mills -> 0.004 ohm / 100mills -> 1,574 mR / mm
