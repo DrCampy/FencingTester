@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/mdiepart/git/FencingTester/KiCad/FencingTester.sch)
-    (date "lun 30 sep 2019 13:02:37 CEST")
+    (date "lun 07 oct 2019 10:15:19 CEST")
     (tool "Eeschema 5.0.2+dfsg1-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
